@@ -1,2 +1,0 @@
-# cake-practice
-cakePHP-practice
