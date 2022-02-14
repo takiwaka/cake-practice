@@ -50,8 +50,8 @@ return [
     'App' => [
         'namespace' => 'App',
         'encoding' => env('APP_ENCODING', 'UTF-8'),
-        'defaultLocale' => env('APP_DEFAULT_LOCALE', 'en_US'),
-        'defaultTimezone' => env('APP_DEFAULT_TIMEZONE', 'UTC'),
+        'defaultLocale' => env('APP_DEFAULT_LOCALE', 'ja_JP'),
+        'defaultTimezone' => env('APP_DEFAULT_TIMEZONE', 'Asia/Tokyo'),
         'base' => false,
         'dir' => 'src',
         'webroot' => 'webroot',
@@ -265,25 +265,25 @@ return [
             'persistent' => false,
             'host' => 'localhost',
             /*
-             * CakePHP will use the default DB port based on the driver selected
-             * MySQL on MAMP uses port 8889, MAMP users will want to uncomment
-             * the following line and set the port accordingly
-             */
-            //'port' => 'non_standard_port_number',
+            * CakePHP will use the default DB port based on the driver selected
+            * MySQL on MAMP uses port 8889, MAMP users will want to uncomment
+            * the following line and set the port accordingly
+            */
+            'port' => 'non_standard_port_number',
             /*
-             * It is recommended to set these options through your environment or app_local.php
-             */
-            //'username' => 'my_app',
-            //'password' => 'secret',
-            //'database' => 'my_app',
+            * It is recommended to set these options through your environment or app_local.php
+            */
+            'username' => 'cake',
+            'password' => 'cakecake',
+            'database' => 'my_app',
             /*
              * You do not need to set this flag to use full utf-8 encoding (internal default since CakePHP 3.6).
              */
-            //'encoding' => 'utf8mb4',
-            'timezone' => 'UTC',
+            'encoding' => 'utf8mb4',
+            'timezone' => '+09:00',
             'flags' => [],
             'cacheMetadata' => true,
-            'log' => false,
+            'log' => true,
 
             /*
              * Set identifier quoting to true if you are using reserved words or
